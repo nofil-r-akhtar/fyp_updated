@@ -21,7 +21,7 @@ class Page2 extends StatelessWidget {
             children: [
               TxtField(controller: registrationController.contactNoController, label: "Contact No"),
               TxtField(controller: registrationController.emailController, label: "Email"),
-              TxtField(controller: registrationController.passwordController, label: "Password"),
+              TxtField(controller: registrationController.passwordController, label: "Password", isPassword: true,),
               TxtField(controller: registrationController.specialization, label: "Specialization"),
               Spacer(),
               

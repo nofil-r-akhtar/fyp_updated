@@ -5,6 +5,7 @@ import 'package:seizure_deck/data/user.dart';
 import 'package:seizure_deck/database/doctor_login.dart';
 import 'package:seizure_deck/globals.dart' as globals;
 import 'package:seizure_deck/providers/user_provider.dart';
+import 'package:seizure_deck/screens/doctor_regsitration/doctor_registration.dart';
 import 'package:seizure_deck/screens/home_screen/main_home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -37,7 +38,9 @@ class _DoctorTabLoginState extends State<DoctorTabLogin> {
               label: "Email"),
             TxtField(
               controller: passwordController, 
-              label: "Password"),
+              label: "Password",
+              isPassword: true,
+            ),
             SizedBox(height: 8.0),
             Row(
               children: [
@@ -116,7 +119,7 @@ class _DoctorTabLoginState extends State<DoctorTabLogin> {
             SizedBox(height: 15.0),
             GestureDetector(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>  DoctorRegistration()));
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),

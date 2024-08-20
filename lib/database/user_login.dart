@@ -23,6 +23,7 @@ class UserLogin {
           globals.username = responseBody['user']['name'];
           globals.user_email = responseBody['user']['email'];
           int uid = int.parse(responseBody['user']['uid']);
+          globals.id = uid;
 
           // Returning success status and the uid
           return {'success': true, 'uid': uid};

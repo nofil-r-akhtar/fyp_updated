@@ -41,6 +41,7 @@ class _UserTabLoginState extends State<UserTabLogin> {
             TxtField(
               controller: passwordController,
               label: "Password",
+              isPassword: true
             ),
             SizedBox(height: 8.0),
             Row(

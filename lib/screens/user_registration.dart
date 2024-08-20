@@ -70,7 +70,7 @@ class _UserRegistrationState extends State<UserRegistration> {
           children: [
             TxtField(controller: name, label: "Name"),
             TxtField(controller: email, label: "Email"),
-            TxtField(controller: password, label: "Password"),
+            TxtField(controller: password, label: "Password", isPassword: true,),
             TxtField(controller: dob, label: "Date of Birth", 
               onTap: () {
                 _selectDate(context);

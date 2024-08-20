@@ -20,6 +20,7 @@ class DoctorLogin {
           globals.doctor_name = responseBody['user']['name'];
           globals.doctor_email = responseBody['user']['email'];
           int uid = responseBody['user']['id'];
+          globals.id = uid;
           return {
             'success': true,
             'uid': uid,

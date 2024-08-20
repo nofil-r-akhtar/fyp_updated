@@ -40,9 +40,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
     if (userUid != null) {
       globals.isDoctorLogin = false;
+      globals.id = userUid;
       _autoLogin(userUid);
     } else if (doctorUid != null) {
       globals.isDoctorLogin = true;
+      globals.id = doctorUid;
       _autoLogin(doctorUid);
     }
   }
